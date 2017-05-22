@@ -6,8 +6,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rangeslider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Athiti:300,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar" role="navigation">
@@ -35,23 +37,48 @@
       <div class="col-md-7 pull-right">
         <div class="skewed-bg--white">
           <div class="calculator skewed-content">
-            <img src="img/circle_icon.png" alt="Round icon"><span>ILE PIENIĘDZY CHCESZ POŻYCZYĆ?</span>
-            <div class="slider"></div>
-            <img src="img/circle_icon.png" alt="Round icon"><span>NA ILE DNI?</span>
-            <div class="slider"></div>
-            <table>
-              <tr>
-                <th>pożyczka <br>2200 Zł</th>
-                <th>koszt <br>300 ZŁ</th>
-              </tr>
-              <tr>
-                <th>razem: <span>2500 ZŁ</span> <br><p>RRSO 0,112%</p></th>
-              </tr>
-              <tr>
-                <th>TERMIN SPŁATY: 5.08.2016</th>
-              </tr>
-            </table>
-            <button class="cta">WEŹ POŻYCZKĘ ></button>
+            <div class="slider">
+              <div class="slider-header">
+                <img src="img/circle_icon.png" alt="Round icon"><span>ILE PIENIĘDZY CHCESZ POŻYCZYĆ?</span>
+              </div>
+              <div class="slider-body">
+                <p class="pull-left">1600 Zł</p>
+                <p class="pull-right">6000 Zł</p>
+                <form>
+                  <input class="slider1" type="range" min="1600" max="6000" step="100" value="2200">
+                </form>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="slider-header">
+                <img src="img/circle_icon.png" alt="Round icon"><span>NA ILE DNI?</span>
+              </div>
+              <div class="slider-body">
+                <p class="pull-left">60 DNI</p>
+                <p class="pull-right">150 DNI</p>
+                <form>
+                  <input class="slider2" type="range" min="60" max="150" step="10" value="80">
+                </form>
+              </div>
+            </div>
+            <div class="calculator-table pull-left">
+              <table>
+                <tr>
+                  <th class="border-br">pożyczka <br><span>2200 Zł</span></th>
+                  <th class="border-br">koszt <br><span>300 ZŁ</span></th>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th class="border-b">razem: <span class="font-xl pull-right">2500 ZŁ</span> <br><p><span class="font-xs">RRSO 0,112%</span></p></th>
+                </tr>
+              </table>
+              <div>
+                <p class="border-b"></p>
+                <p class="font-xs">TERMIN SPŁATY: 5.08.2016</p>
+              </div>
+              </div>
+              <button class="cta pull-right">WEŹ POŻYCZKĘ ></button>
           </div>
         </div>
       </div>
@@ -92,12 +119,54 @@
       </div>
     </div>
     <footer>
-      <p>Wszelkie Prawa zastrzeżone 2016 | Pożyczkon.cz</p>
+      <p class="font-xs">Wszelkie Prawa zastrzeżone 2016 | Pożyczkon.cz</p>
       <p>O nas | Kontakt</p>
-      <div class="social pull-right">SOXIAL</div>
+      <div class="social pull-right"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></div>
     </footer>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script>
+
+    var $element1 = $('.slider1');
+    var $handle1;
+
+    $element1
+      .rangeslider({
+        polyfill: false,
+        onInit: function() {
+          $handle1 = $('.rangeslider__handle', this.$range);
+          updateHandle($handle1[0], this.value + ' Zł');
+        }
+      })
+      .on('input', function() {
+        updateHandle($handle1[0], this.value + ' Zł');
+      });
+
+    function updateHandle(el, val) {
+      el.textContent = val;
+    }
+    
+    var $element2 = $('.slider2');
+    var $handle2;
+
+    $element2
+      .rangeslider({
+        polyfill: false,
+        onInit: function() {
+          $handle2 = $('.rangeslider__handle', this.$range);
+          updateHandle($handle2[0], this.value + ' DNI');
+        }
+      })
+      .on('input', function() {
+        updateHandle($handle2[0], this.value + ' DNI');
+      });
+
+    function updateHandle(el, val) {
+      el.textContent = val;
+    }
+
+  </script>
 </body>
 </html>

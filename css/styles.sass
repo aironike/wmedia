@@ -1,13 +1,15 @@
 $gold1: #c0a92b
 $gold2: #cab761
+$blue: #7895a4
 
-=skewed($bg, $deg1, $deg2)
+=skewed($bg, $height, $deg1, $deg2)
   background: $bg
+  height: $height
   -webkit-transform: skew($deg1, $deg2)
   -ms-transform: skew($deg1, $deg2)
   transform: skew($deg1, $deg2)
-  padding: 60px 0
-  margin-top: 50px
+  padding: 50px 0
+  margin-top: -30px
 
 body
   font-family: 'Athiti', sans-serif
@@ -60,7 +62,7 @@ body
 
 .nav li .infoline a
   margin: 0 30px 0 0
-  color: #7895a4
+  color: $blue
   
 .nav li .infoline a:hover, .nav li .infoline a:active
   color: #000
@@ -75,15 +77,120 @@ body
 .calculator
   padding: 0 80px
 
-.calculator span 
+.rangeslider
+  background: #000
+  
+.rangeslider--horizontal
+  height: 4px
+
+.rangeslider--horizontal .rangeslider__fill
+  border-radius: 0px
+  height: 4px
+  background: $gold1
+
+.rangeslider__handle, .rangeslider__handle:active 
+  border: 3px solid $gold1
+  border-radius: 0px
+  width: 143px
+  height: 40px
+  line-height: 35px
+  text-align: center
+  font-size: 16px
+  font-weight: 700
+  color: $gold1
+  -webkit-box-shadow: 2px 2px 0px 0 rgba(0,0,0,1)
+  -moz-box-shadow: 2px 2px 0px 0 rgba(0,0,0,1)
+  box-shadow: 2px 2px 0px 0 rgba(0,0,0,1)
+  background-image: url(../img/slider_bg.png)
+
+.rangeslider__handle:after
+  content: none
+  
+.rangeslider--horizontal .rangeslider__handle
+  top: -17px
+
+.slider
+  padding-bottom: 60px
+  
+.slider-header
+  padding-bottom: 75px
+  
+.slider-header img 
+  margin-left: -23px
+  padding-right: 13px
+  vertical-align: baseline
+  
+.slider-header span
+  font-weight: 700
+  
+.slider-body p
+  margin-top: -45px
+  font-size: 16px
+  font-weight: 400
+  
+.calculator table span 
+  font-size: 16px
+  font-weight: 700
+  color: $gold1
+
+.calculator table
+  width: 100%
+  text-transform: uppercase
+
+.calculator-table
+  width: 200px
+
+.calculator .calculator-table > tr:first-child
+  padding-left: 0
+  
+.calculator table .font-xl
+  font-size: 24px
+  padding: 0 0 20px 0
+  
+.calculator table .font-xs
+  position: absolute
+  left: 215px
+  margin-top: 15px
+  font-size: 11px
+
+.calculator-table p.font-xs
+  font-size: 11px
+  text-align: center
+  margin-top: -10px
+  
+.calculator table .border-br
+  border-bottom: 1px solid $gold1
+  border-right: 1px solid $gold1
+  padding: 0 20px 5px 15px
+
+.calculator table .border-b
+  border-bottom: 1px solid $gold1
+  
+.calculator th
+  font-size: 12px
+  font-weight: 500
+  
+.calculator .cta
+  width: 250px
+  height: 85px
+  background: $blue
+  border: 7px solid $gold1
+  color: #fff
+  font-size: 16px
   font-weight: 700
 
-.calculator th
-  font-weight: 500
+.promo-info
+  padding-bottom: 70px
   
 .promo-info .icon
   display: block
   margin: 0 auto
+  
+.promo-info .icon-text
+  padding: 25px 50px 0 50px
+
+.promo-info h2
+  text-transform: uppercase
   
 .promo-info h2, .promo-info p 
   color: $gold2
@@ -92,15 +199,14 @@ body
   font-weight: 300
   
 .promo-info h2, .promo-info p, .disclaimer span, .disclaimer p
-  text-align: justify
+  text-align: center
   text-align-last: center
-
   
 .skewed-bg--white
-  +skewed(#fff, 0deg, -3deg)
+  +skewed(#fff, 555px, 0deg, -3deg)
   
 .skewed-bg--grey
-  +skewed(#f2f2f2, 0deg, -3deg)
+  +skewed(#f2f2f2, 650px, 0deg, -3deg)
 
 .skewed-content 
   -webkit-transform: skew(0deg, 3deg)
@@ -121,6 +227,13 @@ footer
   
 footer p, footer div
   display: inline-block
+
+footer p.font-xs
+  font-size: 12px
+
+.social i 
+  color: $gold2
+  padding: 0 0 25px 10px
   
 @media (max-width: 991px)
   .nav li a

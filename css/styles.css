@@ -1,44 +1,44 @@
-/* line 12, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 14, C:/xampp/htdocs/wmedia/css/styles.sass */
 body {
   font-family: 'Athiti', sans-serif; }
 
-/* line 15, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 17, C:/xampp/htdocs/wmedia/css/styles.sass */
 .navbar {
   height: 85px;
   background-color: #f4f4f3;
   margin-bottom: 0; }
 
-/* line 20, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 22, C:/xampp/htdocs/wmedia/css/styles.sass */
 .navbar-toggle {
   margin-top: 25px; }
 
-/* line 23, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 25, C:/xampp/htdocs/wmedia/css/styles.sass */
 .navbar-toggle .icon-bar {
   background-color: #000; }
 
-/* line 26, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 28, C:/xampp/htdocs/wmedia/css/styles.sass */
 .collapse.in, .collapsing {
   position: relative;
   background-color: #f4f4f3;
   z-index: 2; }
 
-/* line 31, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 33, C:/xampp/htdocs/wmedia/css/styles.sass */
 .container > .navbar-collapse {
   margin-right: -16px;
   margin-left: -16px; }
 
-/* line 35, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 37, C:/xampp/htdocs/wmedia/css/styles.sass */
 .navbar-brand {
   height: 85px;
   padding: 27px 15px; }
 
-/* line 39, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 41, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li.active > a {
   color: #000;
   border-bottom: 3px solid #000;
   pointer-events: none; }
 
-/* line 44, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 46, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li a {
   margin: 30px 30px;
   padding: 0 7px 2px 7px;
@@ -47,121 +47,260 @@ body {
   font-size: 16px;
   font-weight: 700; }
 
-/* line 52, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 54, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li a:hover, .nav li a:active {
   background-color: transparent;
   color: #000;
   border-bottom: 3px solid #000; }
 
-/* line 57, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 59, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li .infoline {
   margin: 29px 30px 32px 55px;
   font-size: 16px; }
 
-/* line 61, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 63, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li .infoline a {
   margin: 0 30px 0 0;
   color: #7895a4; }
 
-/* line 65, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 67, C:/xampp/htdocs/wmedia/css/styles.sass */
 .nav li .infoline a:hover, .nav li .infoline a:active {
   color: #000;
   text-decoration: none;
   padding-bottom: 0; }
 
-/* line 70, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 72, C:/xampp/htdocs/wmedia/css/styles.sass */
 .jumbotron {
   background-image: url(../img/banner.jpg);
   background-size: cover;
   height: 580px; }
 
-/* line 75, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 77, C:/xampp/htdocs/wmedia/css/styles.sass */
 .calculator {
   padding: 0 80px; }
 
-/* line 78, C:/xampp/htdocs/wmedia/css/styles.sass */
-.calculator span {
+/* line 80, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider {
+  background: #000; }
+
+/* line 83, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider--horizontal {
+  height: 4px; }
+
+/* line 86, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider--horizontal .rangeslider__fill {
+  border-radius: 0px;
+  height: 4px;
+  background: #c0a92b; }
+
+/* line 91, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider__handle, .rangeslider__handle:active {
+  border: 3px solid #c0a92b;
+  border-radius: 0px;
+  width: 143px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c0a92b;
+  -webkit-box-shadow: 2px 2px 0px 0 black;
+  -moz-box-shadow: 2px 2px 0px 0 black;
+  box-shadow: 2px 2px 0px 0 black;
+  background-image: url(../img/slider_bg.png); }
+
+/* line 106, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider__handle:after {
+  content: none; }
+
+/* line 109, C:/xampp/htdocs/wmedia/css/styles.sass */
+.rangeslider--horizontal .rangeslider__handle {
+  top: -17px; }
+
+/* line 112, C:/xampp/htdocs/wmedia/css/styles.sass */
+.slider {
+  padding-bottom: 60px; }
+
+/* line 115, C:/xampp/htdocs/wmedia/css/styles.sass */
+.slider-header {
+  padding-bottom: 75px; }
+
+/* line 118, C:/xampp/htdocs/wmedia/css/styles.sass */
+.slider-header img {
+  margin-left: -23px;
+  padding-right: 13px;
+  vertical-align: baseline; }
+
+/* line 123, C:/xampp/htdocs/wmedia/css/styles.sass */
+.slider-header span {
   font-weight: 700; }
 
-/* line 81, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 126, C:/xampp/htdocs/wmedia/css/styles.sass */
+.slider-body p {
+  margin-top: -45px;
+  font-size: 16px;
+  font-weight: 400; }
+
+/* line 131, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c0a92b; }
+
+/* line 136, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table {
+  width: 100%;
+  text-transform: uppercase; }
+
+/* line 140, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator-table {
+  width: 200px; }
+
+/* line 143, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator .calculator-table > tr:first-child {
+  padding-left: 0; }
+
+/* line 146, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table .font-xl {
+  font-size: 24px;
+  padding: 0 0 20px 0; }
+
+/* line 150, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table .font-xs {
+  position: absolute;
+  left: 215px;
+  margin-top: 15px;
+  font-size: 11px; }
+
+/* line 156, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator-table p.font-xs {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10px; }
+
+/* line 161, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table .border-br {
+  border-bottom: 1px solid #c0a92b;
+  border-right: 1px solid #c0a92b;
+  padding: 0 20px 5px 15px; }
+
+/* line 166, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator table .border-b {
+  border-bottom: 1px solid #c0a92b; }
+
+/* line 169, C:/xampp/htdocs/wmedia/css/styles.sass */
 .calculator th {
+  font-size: 12px;
   font-weight: 500; }
 
-/* line 84, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 173, C:/xampp/htdocs/wmedia/css/styles.sass */
+.calculator .cta {
+  width: 250px;
+  height: 85px;
+  background: #7895a4;
+  border: 7px solid #c0a92b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700; }
+
+/* line 182, C:/xampp/htdocs/wmedia/css/styles.sass */
+.promo-info {
+  padding-bottom: 70px; }
+
+/* line 185, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info .icon {
   display: block;
   margin: 0 auto; }
 
-/* line 88, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 189, C:/xampp/htdocs/wmedia/css/styles.sass */
+.promo-info .icon-text {
+  padding: 25px 50px 0 50px; }
+
+/* line 192, C:/xampp/htdocs/wmedia/css/styles.sass */
+.promo-info h2 {
+  text-transform: uppercase; }
+
+/* line 195, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p {
   color: #cab761; }
 
-/* line 91, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 198, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p, .disclaimer p {
   font-weight: 300; }
 
-/* line 94, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 201, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p, .disclaimer span, .disclaimer p {
-  text-align: justify;
+  text-align: center;
   text-align-last: center; }
 
-/* line 99, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 205, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-bg--white {
   background: #fff;
+  height: 555px;
   -webkit-transform: skew(0deg, -3deg);
   -ms-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
-  padding: 60px 0;
-  margin-top: 50px; }
+  padding: 50px 0;
+  margin-top: -30px; }
 
-/* line 102, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 208, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-bg--grey {
   background: #f2f2f2;
+  height: 650px;
   -webkit-transform: skew(0deg, -3deg);
   -ms-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
-  padding: 60px 0;
-  margin-top: 50px; }
+  padding: 50px 0;
+  margin-top: -30px; }
 
-/* line 105, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 211, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-content {
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg); }
 
-/* line 109, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 215, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer {
   background-color: #f2f2f2;
   padding: 0 30px; }
 
-/* line 113, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 219, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer span {
   font-weight: 700; }
 
-/* line 116, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 222, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer p, .disclaimer span {
   color: #666; }
 
-/* line 119, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 225, C:/xampp/htdocs/wmedia/css/styles.sass */
 footer {
   padding-top: 100px; }
 
-/* line 122, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 228, C:/xampp/htdocs/wmedia/css/styles.sass */
 footer p, footer div {
   display: inline-block; }
 
+/* line 231, C:/xampp/htdocs/wmedia/css/styles.sass */
+footer p.font-xs {
+  font-size: 12px; }
+
+/* line 234, C:/xampp/htdocs/wmedia/css/styles.sass */
+.social i {
+  color: #cab761;
+  padding: 0 0 25px 10px; }
+
 @media (max-width: 991px) {
-  /* line 126, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 239, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li a {
     margin: 30px 10px; }
-  /* line 128, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 241, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li .infoline {
     margin: 29px 0 32px 35px; } }
 
 @media (max-width: 767px) {
-  /* line 132, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 245, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li .infoline {
     margin: 29px 0 32px 16px; }
-  /* line 134, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 247, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li a:hover {
     margin-bottom: -2px; } }
 
