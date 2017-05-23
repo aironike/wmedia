@@ -198,45 +198,46 @@ body {
 
 /* line 176, C:/xampp/htdocs/wmedia/css/styles.sass */
 .calculator .cta {
-  width: 250px;
-  height: 85px;
+  width: 230px;
+  height: 80px;
   background: #7895a4;
   border: 7px solid #c0a92b;
   color: #fff;
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 18px; }
 
-/* line 185, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 186, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info {
   padding-bottom: 70px; }
 
-/* line 188, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 189, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info .icon {
   display: block;
   margin: 0 auto; }
 
-/* line 192, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 193, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info .icon-text {
   padding: 25px 50px 0 50px; }
 
-/* line 195, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 196, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2 {
   text-transform: uppercase; }
 
-/* line 198, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 199, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p {
   color: #cab761; }
 
-/* line 201, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 202, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p, .disclaimer p {
   font-weight: 300; }
 
-/* line 204, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 205, C:/xampp/htdocs/wmedia/css/styles.sass */
 .promo-info h2, .promo-info p, .disclaimer span, .disclaimer p {
   text-align: center;
   text-align-last: center; }
 
-/* line 208, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 209, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-bg--white {
   background: #fff;
   height: 555px;
@@ -246,7 +247,7 @@ body {
   padding: 50px 0;
   margin-top: -28px; }
 
-/* line 211, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 212, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-bg--grey {
   background: #f2f2f2;
   height: 100%;
@@ -256,82 +257,82 @@ body {
   padding: 50px 0;
   margin-top: -28px; }
 
-/* line 214, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 215, C:/xampp/htdocs/wmedia/css/styles.sass */
 .skewed-content {
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg); }
 
-/* line 218, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 219, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer {
   background-color: #f2f2f2;
   padding: 0 30px; }
 
-/* line 222, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 223, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer span {
   font-weight: 700; }
 
-/* line 225, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 226, C:/xampp/htdocs/wmedia/css/styles.sass */
 .disclaimer p, .disclaimer span {
   color: #666; }
 
-/* line 228, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 229, C:/xampp/htdocs/wmedia/css/styles.sass */
 footer {
   text-align: center;
   padding-top: 100px; }
 
-/* line 232, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 233, C:/xampp/htdocs/wmedia/css/styles.sass */
 footer p, footer div {
   display: inline-block; }
 
-/* line 235, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 236, C:/xampp/htdocs/wmedia/css/styles.sass */
 footer p.font-xs {
   font-size: 12px; }
 
-/* line 238, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 239, C:/xampp/htdocs/wmedia/css/styles.sass */
 .footer-contact {
   padding-right: 180px; }
 
-/* line 241, C:/xampp/htdocs/wmedia/css/styles.sass */
+/* line 242, C:/xampp/htdocs/wmedia/css/styles.sass */
 .social i {
   color: #cab761;
   padding: 0 0 25px 10px; }
 
 @media (max-width: 991px) {
-  /* line 247, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 248, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li a {
     margin: 30px 10px; }
-  /* line 249, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 250, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li .infoline {
     margin: 29px 0 32px 35px; } }
 
 @media (max-width: 767px) {
-  /* line 253, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 254, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li .infoline {
     margin: 29px 0 32px 16px; }
-  /* line 255, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 256, C:/xampp/htdocs/wmedia/css/styles.sass */
   .nav li a:hover {
     margin-bottom: -2px; }
-  /* line 257, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 258, C:/xampp/htdocs/wmedia/css/styles.sass */
   .skewed-bg--white {
     margin-top: -10px; } }
 
 @media (max-width: 707px) {
-  /* line 261, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 262, C:/xampp/htdocs/wmedia/css/styles.sass */
   .calculator {
     padding: 0 50px; }
-  /* line 263, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 264, C:/xampp/htdocs/wmedia/css/styles.sass */
   .calculator .cta {
     width: 200px;
     height: 65px; }
-  /* line 266, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 267, C:/xampp/htdocs/wmedia/css/styles.sass */
   .calculator table .font-xs {
     left: 185px; } }
 
 @media (max-width: 600px) {
-  /* line 270, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 271, C:/xampp/htdocs/wmedia/css/styles.sass */
   .jumbotron {
     height: 680px; }
-  /* line 272, C:/xampp/htdocs/wmedia/css/styles.sass */
+  /* line 273, C:/xampp/htdocs/wmedia/css/styles.sass */
   .skewed-bg--white {
     height: 635px; } }
 
